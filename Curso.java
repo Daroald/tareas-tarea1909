@@ -8,9 +8,9 @@ public class Curso
     /**
      * Constructor for objects of class Curso
      */
-    public Curso(String nbr)
+    public Curso()
     {
-        nombre=nbr;
+        nombre="Programacion";
         curso=new ArrayList<Alumno>();
         itc= curso.iterator();
     }
@@ -91,12 +91,11 @@ public class Curso
         return b;
     }
 
-    public int posicionALAlumno(String nbr,String aplld,String rt,String matr)
+    public int posicionALAlumno(String matr)
     {
         int n=0;
         while(itc.hasNext()){//revisa el ArrayList mientras hayan elementos u objetos
-            if(itc.next().getNombre()==nbr && itc.next().getApellido()==aplld && 
-            itc.next().getRut()==rt && itc.next().getMatricula()==matr){
+            if(itc.next().getMatricula()==matr){
                 n=curso.indexOf(itc.next());//devuelve posicion
                 
             }
