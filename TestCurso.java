@@ -35,7 +35,8 @@ public class TestCurso
                 eliminarAlumno();
                 break;
                 case 3:
-
+                existeAlumno();
+                break;
                 case 4:
                 mostrarCurso();
                 break;
